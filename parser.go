@@ -88,8 +88,6 @@ func (p *parser) parseAll() (groups map[string]*Group, host string, sitemaps []s
 				if !isEmptyGroup {
 					// End previous group
 					agents = make([]string, 0, 4)
-					agents = append(agents, li.vs)
-					setRule(li, groups, agents, false)
 				}
 				if len(agents) == 0 {
 					isEmptyGroup = true

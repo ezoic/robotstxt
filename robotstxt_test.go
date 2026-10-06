@@ -418,6 +418,7 @@ disallow: /c`
 
 	expectAccess(t, r, false, "/a", "b")
 	expectAccess(t, r, false, "/b", "b")
+	expectAccess(t, r, false, "/c", "b")
 	expectAccess(t, r, false, "/c", "c")
 
 	expectAccess(t, r, true, "/a", "c")
